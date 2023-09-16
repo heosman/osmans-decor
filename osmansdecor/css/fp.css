@@ -1,0 +1,496 @@
+/* My FP Website Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,900&display=swap');
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(90deg, #5E5E5E 33%, #F2E6D0 33%);
+}
+
+
+main.wrapper {
+    overflow:auto;
+    border-radius: 18px;
+    padding: 1em;
+}
+
+h1>a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: rgb(56, 48, 55);
+}
+
+#logo {
+    font-family: 'Bodoni Moda', serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+h2, h3, p {
+    font-family: 'Trebuchet MS';
+    color:rgb(31, 31, 31);
+}
+
+h2 {
+    font-size: 20px;
+}
+
+figure {
+    padding: 2em;
+}
+
+.wide {
+    padding: 4em;
+}
+
+.round {
+    border-radius: 40px;
+    width: 170px;
+    height: 170px;
+    text-align:center;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    text-align:center;
+}
+
+figure {
+    display:inline-block;
+    margin:0px;
+}
+
+.fit {
+    width: 170px;
+    height: 170px;
+    text-align:center;
+}
+
+.linkbutton {
+    text-decoration: none;
+    border: 3px solid;
+    text-align: center;
+    display: inline-block;
+    padding: 16px 32px;
+    color: #5E5E5E;
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+    width: 40%;
+}
+
+ul, dl {
+    font-family: 'Trebuchet MS';
+}
+
+.citation {
+    font-size: 14px;
+}
+
+.indent {
+    padding-left: 20px;
+}
+
+.logo {
+    color: rgb(56, 48, 55);
+    margin-left:1%;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+
+footer {
+    padding:1em;
+    padding-top: 15em;
+	clear:both;
+    text-align: center;
+    margin-top: 30%;
+}
+
+a {
+    color: #5E5E5E;
+}
+
+.slideshow {
+    max-width:500px;
+}
+
+.slide {
+    display:none;
+    width: 100%;
+    padding:0;
+}
+
+
+/* STYLES FOR GALLERY BUTTON */
+.gallerybutton{
+    position: relative;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-83%);
+  }
+  
+  .imageoverlay {
+    opacity: 1;
+    display: block;
+    width: 70%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    padding:0;
+    }
+  
+  .overlaymiddle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -83%);
+    -ms-transform: translate(83%, -83%)
+  }
+  
+  .gallerybutton:hover .imageoverlay {
+    opacity: 0.3;
+  }
+  
+  .gallerybutton:hover .overlaymiddle {
+    opacity: 1;
+  }
+  
+  .buttontext {
+    background-color: #F2E6D0;
+    color: #5E5E5E;
+    border: #5E5E5E solid;
+    font-size: 14px;
+    font-family: 'Trebuchet MS';
+    padding: 16px 32px;
+    text-decoration: none;
+
+  }
+  
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+   main.wrapper {
+		width:80%;
+		margin:auto;
+        padding:1em;
+        padding-top: 3em;
+	}
+
+    section {
+		width:25%;
+		float:left;
+        padding: 1em;
+	}
+
+    .gallery {
+        color: #262626;
+        width: 66%;
+        float: right;
+    }
+
+    .section {
+        color: #262626;
+    }
+	
+    aside {	
+		width:58%;
+        padding-top: 4em;
+        padding-right: 1em;
+        padding-left: 4em;
+		float:left;
+	}
+
+    .option1 {
+        display:block;
+    }
+
+    .option2 {
+        display:none;
+    }
+
+    section p {
+        color: #E5E5E5;
+    }
+    
+    aside p {
+        color: #262626;
+    }
+    
+    .section p {
+        color: #E5E5E5;
+    }
+			
+    img.desktop {
+       	width:50%;
+        display:inline-block;
+    }
+    
+    img.tablet, img.phone {
+       	display:none;
+    	}  
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        		background-color: rgb(214, 206, 213);
+        		color:rgb(56, 48, 55);
+   	 }
+}
+
+
+/* LARGE TABLET */
+@media all and (min-width:842px) and (max-width:1399px) {
+	
+    main.wrapper {
+		width:80%;
+		margin:auto;
+        padding:1em;
+        padding-top: 3em;
+	}
+
+    body {
+        height: 100%;
+        background: linear-gradient(90deg, #5E5E5E 33%, #F2E6D0 33%);
+        }
+
+    section {
+        width:25%;
+        float:left;
+        padding: 1em;
+    }
+
+    .gallery {
+        color: #262626;
+        width: 66%;
+        float: right;
+    }
+
+    aside {	
+        width:67%;
+        padding-top: 4em;
+        padding-right: 1em;
+        float:right;
+    }
+
+    .option2 {
+        display:block;
+    }
+
+    .option1 {
+        display:none;
+    }
+	
+    img.tablet {
+       		width:100%;
+            display:inline-block;
+    }
+    
+    img.desktop, img.phone {
+       	display:none;
+    	}  
+    
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #ccc;
+        color:#000;
+    }
+}
+
+/* SMALL TABLET */
+@media all and (min-width:747px) and (max-width:843px) {
+	
+    main.wrapper {
+		width:90%;
+		margin:auto;
+        padding:1em;
+        padding-top: 3em;
+	}
+
+    body {
+        height: 100%;
+        background: linear-gradient(90deg, #F2E6D0 33%, #F2E6D0 33%);
+        }
+
+    section {
+		float:none;
+        padding: 1em;
+        background-color: #D8CDBC;
+	}
+
+    .section {
+        padding: 1em;
+        background-color: #D8CDBC;
+        color: #262626;
+    }
+
+    .option1 {
+        display:block;
+    }
+
+    .option2 {
+        display:none;
+    }
+
+    figure {
+        display: inline-block;
+        margin: -75px;
+    }
+
+    section p {
+        color: #262626;
+    }
+	
+    aside {	
+        padding: 1em;
+		float:none;
+	}
+	
+    img {
+        padding:3em;
+    }
+
+    .fit {
+        display: none;
+    }
+
+    .round {
+        display: none;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .banner {
+        background-color: #D8CDBC;
+    }
+
+    .gallery {
+        background-color: #F2E6D0;
+    }
+
+    .wide {
+        padding: 3em;
+    }
+
+    img.tablet {
+       		width:100%;
+            display:inline-block;
+    }
+    
+    img.desktop, img.phone {
+       	display:none;
+    	}  
+    
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #ccc;
+        color:#000;
+    }
+}
+
+
+/* PHONE */
+@media all and (max-width:746px) {
+    
+    img.phone {
+       	width:100%;
+        display:inline-block;
+    }
+    
+    img.tablet, img.desktop {
+       	display:none;
+    	}  
+    
+    body {
+        height: 100%;
+        background: linear-gradient(90deg, #F2E6D0 33%, #F2E6D0 33%);
+    }
+
+    .section {
+        padding: 1em;
+        background-color: #D8CDBC;
+    }
+
+    .section p {
+        color: #262626;
+    }
+
+    .option1 {
+        display:block;
+    }
+
+    .option2 {
+        display:none;
+    }
+
+    figure {
+        display: inline-block;
+        margin: -75px;
+    }
+    
+    section {
+        float:none;
+        padding: 1em;
+        background-color: #D8CDBC;
+    }
+    section p {
+        color: #262626;
+    }
+
+    img {
+        padding:3em;
+    }
+
+    .fit {
+        display: none;
+    }
+
+    .round {
+        display: none;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .banner {
+        background-color: #D8CDBC;
+    }
+
+    .gallery {
+        background-color: #F2E6D0;
+    }
+
+    .wide {
+        padding: 1em;
+    }
+
+}
+
+
+@media all and (max-width:1052px) {
+
+.buttontext {
+    background-color: #F2E6D0;
+    color: #5E5E5E;
+    border: #5E5E5E solid;
+    font-size: 12px;
+    font-family: 'Trebuchet MS';
+    padding: 6px;
+    text-decoration: none;
+  }
+
+}
